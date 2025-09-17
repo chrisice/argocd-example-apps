@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: job-guestbook
-          image: "docker.io/library/hello-world:linux"
+          image: "docker.io/library/hello-world:latest"
           imagePullPolicy: Always
           resources:
             limits:
