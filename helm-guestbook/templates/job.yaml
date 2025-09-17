@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: job-guestbook-123
+  name: job-guestbook-345
   # annotations:
   #   argocd.argoproj.io/sync-options: Force=true,Replace=true
 spec:
