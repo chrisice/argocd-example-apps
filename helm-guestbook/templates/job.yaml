@@ -3,7 +3,7 @@ kind: Job
 metadata:
   name: job-guestbook
   annotations:
-    argocd.argoproj.io/sync-options: Replace=true
+    argocd.argoproj.io/sync-options: Force=true,Replace=true
 spec:
   activeDeadlineSeconds: 45
   backoffLimit: 0
