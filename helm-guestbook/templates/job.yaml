@@ -8,6 +8,8 @@ spec:
   ttlSecondsAfterFinished: 84600
   template:
     metadata:
+      annotations:
+        argocd.argoproj.io/sync-options: Replace=true
       labels:
         app: job-guestbook
     spec:
