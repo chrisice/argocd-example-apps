@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: job-guestbook
-          image: "gcr.io/google-samples/gb-frontend:v4"
+          image: "ghcr.io/knative-extensions/helloworld:latest"
           imagePullPolicy: Always
           resources:
             limits:
