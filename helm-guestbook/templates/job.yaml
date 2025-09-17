@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-guestbook
+spec:
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 84600
+  template:
+    metadata:
+      labels:
+        app: job-guestbook
+    spec:
+      containers:
+        - name: job-guestbook
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: Always
+          resources:
+            limits:
+              memory: 50Mi
+            requests:
+              cpu: 100m
+              memory: 50Mi
+      restartPolicy: Never
