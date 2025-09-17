@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: job-guestbook-456
+  name: job-guestbook-{{ randNumeric 10 }}
   # annotations:
   #   argocd.argoproj.io/sync-options: Force=true,Replace=true
 spec:
