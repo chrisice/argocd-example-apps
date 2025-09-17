@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: job-guestbook
-          image: "docker.io/library/hello-world@sha256:1b11ba01aabdfa656e408bc1cb461a4d2f593056c37cf59240d259e3958202f9"
+          image: "docker.io/library/hello-world@sha256:54e66cc1dd1fcb1c3c58bd8017914dbed8701e2d8c74d9262e26bd9cc1642d31"
           imagePullPolicy: Always
           resources:
             limits:
