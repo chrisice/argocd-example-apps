@@ -1,14 +1,12 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: job-guestbook
+  name: job-guestbook-{{ .Values.image.tag }}
   annotations:
-    argocd.argoproj.io/hook: PostSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
     argocd.argoproj.io/sync-wave: "2"
 spec:
   backoffLimit: 0
-  ttlSecondsAfterFinished: 60
+  # ttlSecondsAfterFinished: 60
   template:
     metadata:
       labels:
@@ -16,7 +14,7 @@ spec:
     spec:
       containers:
         - name: job-guestbook
-          image: "docker.io/library/hello-world@sha256:2771e37a12b7bcb2902456ecf3f29bf9ee11ec348e66e8eb322d9780ad7fc2df"
+          image: "docker.io/library/hello-world@sha256:{{ .Values.image.tag }}"
           imagePullPolicy: Always
           resources:
             limits:
