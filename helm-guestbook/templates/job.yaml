@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: job-guestbook-{{ .Values.tag }}
+  name: job-guestbook-{{ tpl .Values.short_sha . }}
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
