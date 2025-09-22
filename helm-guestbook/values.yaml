@@ -5,7 +5,10 @@
 replicaCount: 1
 
 #tag: 2771e37a12b7bcb2902456ecf3f29bf9ee11ec348e66e8eb322d9780ad7fc2df
-tag: 1b11ba01aabdfa656e408bc1cb461a4d2f593056c37cf59240d259e3958202f9
+#tag: 1b11ba01aabdfa656e408bc1cb461a4d2f593056c37cf59240d259e3958202f9
+tag: a8ea96bb64d60208d6a56712042d1cf58aa4a7d3751b897b9320b0813c81cbb4
+#repo: library
+repo: atlassian
 short_sha: '{{ .Values.tag | trunc 7 | trimSuffix "-" }}'
 
 image:
