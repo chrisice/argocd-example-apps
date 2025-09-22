@@ -5,7 +5,7 @@
 replicaCount: 1
 
 #tag: 2771e37a12b7bcb2902456ecf3f29bf9ee11ec348e66e8eb322d9780ad7fc2df
-tag: 1b11ba01aabdfa656e408bc1cb461a4d2f593056c37cf59240d259e3958202f9
+tag: 012e2ca69e1be6cbcd8b4f9bab9252ce197d5fd4318db7439b27ff018069aec6
 short_sha: '{{ .Values.tag | trunc 7 | trimSuffix "-" }}'
 
 image:
