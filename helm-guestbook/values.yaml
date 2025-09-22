@@ -4,7 +4,7 @@
 
 global:
   image:
-    db-migrate: FAKE
+    dbMigrate: FAKE
 
 replicaCount: 1
 
