@@ -14,7 +14,7 @@ global:
 tag: ff7c7d634e44
 #repo: library
 repo: rlinux
-short_sha: "ff7c7d6"
+short_sha: "ff7c7d634e44"
 
 image:
   repository: gcr.io/google-samples/gb-frontend

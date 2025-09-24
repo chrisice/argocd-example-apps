@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: job-guestbook
-          image: "docker.io/{{ .Values.repo }}/hello-world@sha256:{{ .Values.global.image.dbMigrate }}"
+          image: "docker.io/{{ .Values.repo }}/hello-world:{{ .Values.global.image.dbMigrate }}"
           imagePullPolicy: Always
           resources:
             limits:
