@@ -7,11 +7,11 @@ replicaCount: 1
 global:
   image:
     #dbMigrate: bde7aa527375bdbed2501d9b512d7cf2ebd905007de581e97805fdfc88a19974
-    dbMigrate: ff7c7d634e44d3eb2521ab2480f80031d24786dcde6d99eab47e2999b6aaf1f8
+    dbMigrate: ff7c7d634e44
 
 #tag: 54e66cc1dd1fcb1c3c58bd8017914dbed8701e2d8c74d9262e26bd9cc1642d31
 #tag: a8ea96bb64d60208d6a56712042d1cf58aa4a7d3751b897b9320b0813c81cbb4
-tag: bde7aa527375bdbed2501d9b512d7cf2ebd905007de581e97805fdfc88a19974
+tag: ff7c7d634e44
 #repo: library
 repo: rlinux
 short_sha: "ff7c7d6"
