@@ -6,8 +6,8 @@ replicaCount: 1
 
 global:
   image:
-    #dbMigrate: bde7aa527375bdbed2501d9b512d7cf2ebd905007de581e97805fdfc88a19974
-    dbMigrate: ff7c7d634e44
+    dbMigrate: bde7aa527375bdbed2501d9b512d7cf2ebd905007de581e97805fdfc88a19974
+    #dbMigrate: ff7c7d634e44
 
 #tag: 54e66cc1dd1fcb1c3c58bd8017914dbed8701e2d8c74d9262e26bd9cc1642d31
 #tag: a8ea96bb64d60208d6a56712042d1cf58aa4a7d3751b897b9320b0813c81cbb4
@@ -29,8 +29,7 @@ service:
 
 ingress:
   enabled: false
-  annotations:
-    {}
+  annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   path: /
@@ -41,8 +40,7 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
-resources:
-  {}
+resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
