@@ -6,15 +6,15 @@ replicaCount: 1
 
 global:
   image:
-    dbMigrate: 2cb42cbf66188d6212d86e6f6712ac7605f0386c56c3a16239fc2af09fa594fd
+    dbMigrate: 742b83578d19d712742da86c58f8ec6f47c9d0c89d96c7776504691b828eaf78
     #dbMigrate: ff7c7d634e44
 
 #tag: 54e66cc1dd1fcb1c3c58bd8017914dbed8701e2d8c74d9262e26bd9cc1642d31
 #tag: a8ea96bb64d60208d6a56712042d1cf58aa4a7d3751b897b9320b0813c81cbb4
-tag: ff7c7d634e44
+tag: 742b83578d19d712742da86c58f8ec6f47c9d0c89d96c7776504691b828eaf78
 #repo: library
 repo: rlinux
-short_sha: "2cb42cbf"
+short_sha: "742b83578"
 
 image:
   repository: gcr.io/google-samples/gb-frontend
